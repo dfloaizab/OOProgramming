@@ -1,0 +1,40 @@
+
+//Esta clase contiene el método principal, es decir, la ejecución empieza en esta clase
+public class AcademicSystem_Main {
+	
+	
+	public static void main(String args[])
+	{
+		
+		//Se crean dos objetos distintos de la clase Academia:
+		Academia UniversidadAutonoma = new Academia("Universidad Autónoma de Occidente",
+													"Via Cali Jamundí",
+													true,
+													"L-V 6:00AM 10:00PM",
+													"11122233344",
+													1977);
+													
+		Academia UniversidadSantiagoDeCali = new Academia("Universidad Santiago de Cali",
+														  "Calle 5a #62-00",
+														  true,
+														  "L-V 6:00AM 10:00PM",
+														  "8903037971",
+														  1958);
+		
+		//Crear programas académicos:
+		ProgramaAcademico progIngSist = new ProgramaAcademico();		
+		ProgramaAcademico progMedVet = new ProgramaAcademico();
+		
+	
+		UniversidadAutonoma.setNit("11122233344");		
+		System.out.println(UniversidadAutonoma.getNit());
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}
