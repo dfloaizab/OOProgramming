@@ -26,7 +26,8 @@ public class MainModel {
 				gameName = br.readLine();	
 				gamesList.add(gameName);
 				
-			}while(br != null);
+			}while(gameName != null);
+			br.close();
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
