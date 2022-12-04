@@ -17,22 +17,7 @@ public class MainModel {
 	 */
 	public void loadData(String fileName)
 	{
-		gamesList = new ArrayList<String>();
-		String gameName;
-		try {
-			BufferedReader br = new BufferedReader(new FileReader(fileName));
-			do
-			{
-				gameName = br.readLine();	
-				gamesList.add(gameName);
-				
-			}while(gameName != null);
-			br.close();
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
+		
 	}
 	
 	public ArrayList<String> queryAllGames()
