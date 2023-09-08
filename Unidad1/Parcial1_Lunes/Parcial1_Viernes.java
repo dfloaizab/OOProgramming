@@ -1,4 +1,3 @@
-
 /**
  * 
  * @author Diego Loaiza
@@ -10,6 +9,8 @@ public class Parcial1_Viernes {
 	
 	
 	static String leaderboard_names[] = {"Starfield","GTA V","League of Legends","Valorant","Apex Legends"};
+	
+	//
 	static int leaderboard_data[][];
 	
 	//COMPLETAR:declarar las constantes que determinan el tamaño
@@ -22,7 +23,18 @@ public class Parcial1_Viernes {
 	public static void main(String[] args)
 	{
 		//inicializar matriz leaderboard data con 3 columnas y 5 filas
-		leaderboard_data = new int[][]; //Completar código
+		
+		//Completar línea de código
+		leaderboard_data = new int[][]; 
+		
+		//completar inicialización de matriz:
+		leaderboadr_data = {
+				{,,},
+				{,,},
+				{,,},
+				{,,},
+				{,,}
+		};
 		
 		//1. recorrido para calcular el total de horas de streaming
 		// recorrido en la fila respectiva
