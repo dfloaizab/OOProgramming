@@ -34,7 +34,7 @@ public class Parcial1_Lunes {
 		};
 		
 		//1. recorrido para calcular el total de horas de streaming
-		// recorrido en la fila respectiva
+		// recorrido en la columna respectiva
 		for(int fila=0; fila < NUM_FILAS;fila++ )
 		{
 			
@@ -42,14 +42,14 @@ public class Parcial1_Lunes {
 		
 		//2. Búsqueda del nombre del videojuego con mayor numero de
 		//   espectadores
-		//  (recorrido en la fila respectiva)
+		//  (recorrido en la columna respectiva)
 		for(int fila=0; fila < NUM_FILAS; fila++)
 		{
 			
 		}
 		
 		
-		//3. Cálculo del promedio de horas transmitidas
+		//3. Cálculo del promedio de horas transmitidas, recorriendo la columna respectiva
 		for(int fila=0; fila < NUM_FILAS; fila++)
 		{
 			
