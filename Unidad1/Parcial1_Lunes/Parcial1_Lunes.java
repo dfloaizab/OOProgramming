@@ -5,7 +5,7 @@
  * 2023B
  *  
  */
-public class Parcial1_Viernes {
+public class Parcial1_Lunes {
 	
 	
 	static String leaderboard_names[] = {"Starfield","GTA V","League of Legends","Valorant","Apex Legends"};
