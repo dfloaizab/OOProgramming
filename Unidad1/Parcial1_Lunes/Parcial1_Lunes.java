@@ -24,11 +24,9 @@ public class Parcial1_Viernes {
 	{
 		//inicializar matriz leaderboard data con 3 columnas y 5 filas
 		
-		//Completar línea de código
-		leaderboard_data = new int[][]; 
-		
+				
 		//completar inicialización de matriz:
-		leaderboadr_data = {
+		int leaderboard_data[][] = {
 				{,,},
 				{,,},
 				{,,},
