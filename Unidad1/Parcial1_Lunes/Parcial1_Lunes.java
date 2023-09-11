@@ -22,7 +22,6 @@ public class Parcial1_Lunes {
 	
 	public static void main(String[] args)
 	{
-		//inicializar matriz leaderboard data con 3 columnas y 5 filas
 		
 				
 		//completar inicialización de matriz:
