@@ -44,12 +44,59 @@ public class Refugio
 	
 	public void acogerAnimal(Animal nuevoAnimal)
 	{
-
-		//Pendiente: 
+		
 		//   * validar que al agregar un nuevo animal, no se supere la capacidad:
 		//   * incrementar población
-		animales.add(nuevoAnimal);
 		
+		if(poblacion < capacidad) {
+		
+			animales.add(nuevoAnimal);
+			this.poblacion += 1;
+		}
+		
+		//		
+	}
+	
+	public Animal buscarAnimal(String nombre, String id)
+	{
+		Animal result = null;
+		
+		//recorre todo el arreglo dinámico de animales
+		for(int i=0; i < animales.size(); i++)
+		{
+			if(  animales.get(i).getId().equals(id) || animales.get(i).getNombre().equals(nombre))
+			{
+				result = animales.get(i);
+				break;
+			}
+		}		
+		return result;		
+	}
+	
+	
+	public int contarPorEspecie(Especie especie)
+	{
+		int cuantos = 0;
+		//recorrer y contar:
+		for(int i = 0; i < animales.size(); i++)
+		{
+			if(animales.get(i).getEspecie().equals(especie))
+				cuantos++;
+		}		
+		//
+		return cuantos;
+	}
+	
+	public int contarEsterilizados()
+	{
+		int cuantos = 0;
+		//iterador sobre array list
+		for(Animal individuo: animales)
+		{
+			if(individuo.isEsterilizado())
+				cuantos++;
+		}		
+		return cuantos;
 	}
 
 	//getters y setters
@@ -125,9 +172,5 @@ public class Refugio
 		this.fondos = fondos;
 	}
 	
-	//métodos para modificar los atributos, que son privados:
-	//(setters)
-	
-	
-
 }
+
