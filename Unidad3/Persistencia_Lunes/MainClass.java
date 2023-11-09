@@ -44,7 +44,8 @@ public class MainClass {
 				
 				System.out.print(lineaEscribir);				
 				//escribir en el archivo:
-				escritor.write(lineaEscribir);
+				escritor.write(lineaEscribir+"\n");
+				lineaEscribir = "";
 			}
 			escritor.close();
 			
