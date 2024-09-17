@@ -10,8 +10,9 @@ public class GaleriaArte {
         int numObras = scanner.nextInt();
 
         // Crear arreglos para almacenar nombres y precios
-        String[] nombresObras = new String[numObras];
-        double[] preciosObras = new double[numObras];
+        // arreglo de String para los nombres de las obras
+        // arreglo de double para los precios (de tamaño numObras)
+        
 
         // Registrar obras de arte
         registrarObrasDeArte(nombresObras, preciosObras, scanner);
