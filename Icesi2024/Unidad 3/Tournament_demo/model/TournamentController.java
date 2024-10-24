@@ -2,14 +2,17 @@ package model;
 
 public class TournamentController
 {
-    final int NUM_TEAMS = 8, NUM_REFEREES=12;
+    final int NUM_TEAMS = 8, NUM_REFEREES=12, NUM_MATCHES=12;
     private int team_counter,referee_counter;
 
     Team[] teams;
     Referee[] referees;
+    Match[] fixture;
 
     public TournamentController() {
         teams = new Team[NUM_TEAMS];
+        referees = new Referee[NUM_REFEREES];
+        fixture = new Match[NUM_MATCHES];
         team_counter = 0;
         referee_counter=0;
     }
@@ -27,6 +30,15 @@ public class TournamentController
         }
         return result;
     } 
+
+    public boolean addMatchToFixture(Match newMatch)
+    {
+        boolean result = false;
+
+
+        
+        return result;
+    }
 
     public boolean addReferee(String id, String name, String country)
     {
@@ -56,8 +68,19 @@ public class TournamentController
 
     public void preloadInfo()
     {
+        //crear equipos:
         addTeam("Isótopos de Springfield", "USA");
+        addTeam("Isótopos de Shelbyville", "USA");
+        
         addTeam("River PLate","Argentina");
+
+        //agregar jugador a cada equipo:
+
+        //agregar referees:
+
+        //calcular sorteo:
+
+        //asignar árbitros a partido:
     }
 
     public void setRefereeToMatch()
@@ -65,8 +88,17 @@ public class TournamentController
 
     }
 
-    public void calculateFixture()
+    public void generateFixture()
     {
+        //sortear equipos en partidos (asignar grupo):
+        //crear partidos 
+        //---(6 partidos grupo A)
+        //crear 6 objetos Partido
+        //agregar a fixture
+
+        //-- (6 partidos grupo B)
+
+
 
     }
 
