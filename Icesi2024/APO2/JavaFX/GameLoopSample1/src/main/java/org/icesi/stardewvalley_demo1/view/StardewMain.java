@@ -10,6 +10,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.*;
 import javafx.animation.*;
+import org.icesi.stardewvalley_demo1.model.*;
 
 public class StardewMain extends Application {
 
@@ -24,6 +25,8 @@ public class StardewMain extends Application {
     private int spriteHeight = 32; // Alto del sprite
     private int spriteIndex = 0;
 
+    private NPC npc1, npc2, npc3;
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -35,8 +38,28 @@ public class StardewMain extends Application {
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
         // Cargar imágenes
-        map = new Image("file:map.png");  // Reemplaza con la ruta a tu imagen de mapa
-        spriteSheet = new Image("file:spritesheet.png");  // Reemplaza con tu sprite sheet
+        //map = new Image("file:map.png");  // Reemplaza con la ruta a tu imagen de mapa
+        map = new Image(getClass().getResource("/assets/backgrounds/mainMap.jpg").toExternalForm());
+        spriteSheet = new Image(getClass().getResource("/assets/sprite_sheets/sprite_sheet.jpg").toExternalForm());  // Reemplaza con tu sprite sheet
+
+        //crear NPCs:
+        npc1 = new NPCCow(0,0,5,5,new Image("src/main/resources/assets/sprite_sheets/cow.png"));
+        npc2 = new NPCCow(0,0,5,5,new Image("src/main/resources/assets/sprite_sheets/cow.png"));
+
+        NPCAnimationThread nat1 = new NPCAnimationThread(npc1);
+        NPCAnimationThread nat2 = new NPCAnimationThread(npc2);
+
+        nat1.start();
+        nat2.start();
+
+        try {
+            nat1.join();
+            nat2.join();
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
         // Crear un grupo y escena
         Group root = new Group();
