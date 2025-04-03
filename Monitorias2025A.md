@@ -7,9 +7,9 @@
 | **7-8 AM** | Juan Ledesma (Teams) | Erika Muñoz (2406) | | Catalina Estrada (2421)<br>Erika Muñoz (2419) | | Camilo Calderón (Teams) |
 | **8-9 AM** | Juan Ledesma (Teams) | Erika Muñoz (2406) | | Catalina Estrada (2421)<br>Erika Muñoz (2419) | | Camilo Calderón (Teams) |
 | **9-10 AM** | Juan Ledesma (Teams) | Erika Muñoz (2406) | | Catalina Estrada (2421)<br>Erika Muñoz (2419) | Juan Ledesma (2421) | Camilo Calderón (Teams) |
-| **10-11 AM** | | Cristian Cifuentes (2408)<br>Juan Camilo Rodriguez (Teams)<br>Sebastián Obando (Teams) | | Cristian Sanchez (2420) | Juan Ledesma (2421) | |
+| **10-11 AM** | | Cristian Cifuentes (2408)<br>Juan Camilo Rodriguez (Teams) | | Cristian Sanchez (2420) | Juan Ledesma (2421) | |
 | **11-12 AM** | | Cristian Cifuentes (2408)<br>Cristobal (Teams)<br>Juan Camilo Rodriguez (Teams) | | | Juan Ledesma (2421) | |
-| **12-1 PM** | | Cristian Cifuentes (2408)<br>Cristobal (Teams)<br>Juan Camilo Rodriguez (Teams)<br>Sebastián Obando (Teams) | | | | |
+| **12-1 PM** | | Cristian Cifuentes (2408)<br>Cristobal (Teams)<br>Juan Camilo Rodriguez (Teams) | | | | |
 | **1-2 PM** | | Cristobal (Teams) | | | Cristian Sanchez (Teams) | |
 | **2-3 PM** | | <br>Sebastián Obando (Teams)| | Moisés Buitrago (2418)<br>Nicolás Arbelaz (Teams) | Cristian Sanchez (Teams)<br>Jorge Velasquez (2408)<br>Juan Franco (Teams) | |
 | **3-4 PM** | Brayan Buitrago (2408)<br>Cristian Cifuentes (Teams)<br>Jorge Velasquez (Teams) |<br>Sebastián Obando (Teams) | | Moisés Buitrago (2418)<br>Nicolás Arbelaz (Teams) | Jorge Velasquez (2408)<br>Juan Franco (Teams) | |
