@@ -126,3 +126,12 @@ Desarrolla el juego clásico donde los jugadores hacen clic para destapar pares 
 3. Implementación del tablero dinámico
 4. Contador, reinicio y control de flujo
 5. Mejoras, animaciones y evaluación final
+
+## Herrramientas para prototipado de UI:
+| Herramienta | Tipo | Ventajas | Enlace |
+|-------------|------|----------|--------|
+| **Figma** | Basado en navegador | Colaboración en tiempo real, diseño vectorial, prototipos interactivos. Tiene plan gratuito muy completo. | [figma.com](https://www.figma.com) |
+| **Penpot** | Open source y online | Alternativa libre a Figma, colaboración, exportación SVG/HTML. Ideal para educación y proyectos comunitarios. | [penpot.app](https://penpot.app) |
+| **Draw.io (diagrams.net)** | Herramienta de diagramación | Ideal para wireframes rápidos, compatible con SVG. Muy liviano. | [draw.io](https://draw.io) |
+| **Balsamiq Wireframes (cloud)** | Wireframing (estilo sketch) | Muy intuitivo para prototipos rápidos. Versión de prueba gratis. | [balsamiq.com](https://balsamiq.com) |
+| **Pencil Project** | Escritorio (open source) | Libre y multiplataforma. Buena para mockups rápidos. | [pencil.evolus.vn](https://pencil.evolus.vn) |
