@@ -38,25 +38,13 @@ int main() {
 
         switch (opcion) {
             case 1:
-                total = 0;
-                for (i = 0; i < 7; i++) {
-                    total += donaciones[i];
-                }
-                printf("Total de alimentos donados en la semana: %d kg\n", total);
+              
                 break;
             case 2:
-                total = 0;
-                for (i = 0; i < 7; i++) {
-                    total += donaciones[i];
-                }
-                promedio = total / 7.0;
-                printf("Promedio diario de donaciones: %.2f kg\n", promedio);
+
                 break;
             case 3:
-                printf("Donaciones registradas:\n");
-                for (i = 0; i < 7; i++) {
-                    printf("Día %d: %d kg\n", i + 1, donaciones[i]);
-                }
+
                 break;
             case 4:
                 printf("Saliendo del programa...\n");
