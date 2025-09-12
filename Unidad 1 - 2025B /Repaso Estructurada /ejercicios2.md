@@ -97,28 +97,14 @@ int main() {
 
         switch (opcion) {
             case 1:
-                total = 0;
-                for (i = 0; i < 12; i++) {
-                    total += ingresos[i];
-                }
-                printf("Total anual de animales recibidos: %d\n", total);
+
                 break;
             case 2:
-                maxIngresos = ingresos[0];
-                mesMayor = 1;
-                for (i = 1; i < 12; i++) {
-                    if (ingresos[i] > maxIngresos) {
-                        maxIngresos = ingresos[i];
-                        mesMayor = i + 1;
-                    }
-                }
+
                 printf("El mes con más ingresos fue el mes %d con %d animales.\n", mesMayor, maxIngresos);
                 break;
             case 3:
-                printf("Registro completo de ingresos:\n");
-                for (i = 0; i < 12; i++) {
-                    printf("Mes %d: %d animales\n", i + 1, ingresos[i]);
-                }
+
                 break;
             case 4:
                 printf("Saliendo del programa...\n");
