@@ -1,45 +1,86 @@
+import java.io.*;
+
 public class ClinicaVeterinaria {
 
 
     //atributos:
     String razonSocial, NIT, telefono, direccion;
 
-    //1. IMPLEMENTACIÓN DE LA RELACIÓN CON LA CLASE GATO Y PERRO:
-    Perro[] perros;
-    Gato[] gatos;
+    //relación de agregación con clase Animal:
+    //1. declaración
+    //funciona como un arreglo estático:
+    Animal[] animales;
+    final static int NUM_ANIMALES = 50;
+    int pos_animal_nuevo;
 
 
     //métodos:
+    //CONSTRUCTORES:
     public ClinicaVeterinaria()
     {
 
+        //2. Inicialización del arreglo:
+        animales = new Animal[NUM_ANIMALES];
+        //posición actual en la cual se agregará una nueva mascota:
+        pos_animal_nuevo = 0;
     }
 
-
-    //alt + insert 
+    
 
     public ClinicaVeterinaria(String NIT, String direccion, String razonSocial, String telefono) {
+        //2. inicialización del arreglo:
+        animales = new Animal[NUM_ANIMALES];
         this.NIT = NIT;
         this.direccion = direccion;
         this.razonSocial = razonSocial;
         this.telefono = telefono;
+        //posición actual en la cual se agregará una nueva mascota:
+        pos_animal_nuevo = 0;
         
-        perros = new Perro[50];
-        gatos = new Gato[50];
     }
 
     // 2. funcionalidades:
-    public void registrarIngresoPerro(Perro mascota)
+    public void registrarIngresoPerro(Animal mascota)
     {
-        //ToDO: 
+        //agregar al arreglo de acuerdo a la posición actual:
+        animales[pos_animal_nuevo] = mascota;
+        pos_animal_nuevo++;
+
     }
 
-    public void registrarSalidaMascota(Perro mascota)
+    public void registrarSalidaMascota(Animal mascota)
     {
-        //ToDO:
+        //buscar en el arreglo (recorrer con un ciclo for):
+
+        //asignar null o eliminar:
     }
 
+    public void cargarListaMascotas(String rutaArchivo)
+    {
+        //los bloques try catch permiten controlar errores sin interrumpir la ejecución del programa:
+        try {
+            //instrucciones que pueden generar error:
+            BufferedReader lectorArchivo = new BufferedReader(new FileReader(rutaArchivo));
+            String linea = "";
+            //lectura secuencial del archivo:
+            while(   (linea = lectorArchivo.readLine()) != null       )
+            {
 
+            }
+        } 
+        //pueden haber varios bloques catch, de acuerdo al tipo de excepciones:
+        catch (FileNotFoundException ex) 
+        {
+        } 
+        catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        finally{}
+
+
+
+    }
 
 
     
