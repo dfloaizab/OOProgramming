@@ -4,14 +4,14 @@ public class ClinicaVeterinaria {
 
 
     //atributos:
-    String razonSocial, NIT, telefono, direccion;
+    private String razonSocial, NIT, telefono, direccion;
 
     //relación de agregación con clase Animal:
     //1. declaración
     //funciona como un arreglo estático:
-    Animal[] animales;
+    private Animal[] animales;
     final static int NUM_ANIMALES = 50;
-    int pos_animal_nuevo;
+    private int pos_animal_nuevo;
 
 
     //métodos:
@@ -65,21 +65,19 @@ public class ClinicaVeterinaria {
             //lectura secuencial del archivo:
             while(   (linea = lectorArchivo.readLine()) != null       )
             {
-
+                System.out.println(linea);
             }
         } 
         //pueden haber varios bloques catch, de acuerdo al tipo de excepciones:
         catch (FileNotFoundException ex) 
         {
+            System.out.print("Ocurrió el error:"+ex.getMessage());
         } 
         catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
         finally{}
-
-
-
     }
 
 
