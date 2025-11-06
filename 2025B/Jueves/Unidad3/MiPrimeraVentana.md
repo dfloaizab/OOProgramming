@@ -120,5 +120,5 @@ Debería ver una pequeña ventana con una caja de selección y un botón funcion
 
 ---
 
-> 💡 **Consejo:** Swing es una biblioteca más moderna y flexible que AWT.  
+> **Consejo:** Swing es una biblioteca más moderna y flexible que AWT.  
 > Aunque AWT sigue siendo útil, se recomienda usar Swing o JavaFX en proyectos actuales.
